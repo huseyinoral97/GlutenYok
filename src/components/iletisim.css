@@ -1,0 +1,109 @@
+.css-1p5127y-MuiPaper-root-MuiAccordion-root:before {
+    background-color: transparent !important;
+}
+.css-1p5127y-MuiPaper-root-MuiAccordion-root {
+    color: white !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: 1px solid white !important;
+}
+.css-8tabqc-MuiFormLabel-root-MuiInputLabel-root {
+    font-size: 0.8rem !important;
+}
+.MuiAccordion-root:before {
+    background-color: transparent !important;
+}
+
+.textareaslide5::placeholder {
+    color: white;
+}
+.iletisimtextarea::placeholder {
+    color: #8abce8;
+}
+.iletisimtextarea {
+    border: none !important;
+}
+
+.iletisimtextarea {
+    min-height: max-content;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+        padding: 8.5px 14px !important;
+    }
+    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+        font-size: 0.6rem !important;
+        line-height: 0.8em !important;
+    }
+    .popup-content {
+        width: 100% !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+        padding: 8.5px 14px !important;
+    }
+    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+        font-size: 0.6rem !important;
+        line-height: 0.8em !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+    .glutenfree {
+        width: 10% !important;
+        top: 10% !important;
+        left: 25% !important;
+    }
+    .instagramList {
+        width: 320px !important;
+        height: 320px !important;
+    }
+    .ssscontainer {
+        padding: 10px 20px !important;
+    }
+    .sss-title {
+        font-size: 20px !important;
+    }
+    .iletisim-container {
+        padding: 0px 20px !important;
+    }
+    .iletisim-title {
+        font-size: 20px !important;
+    }
+    .iletisim-subtitle {
+        display: none !important;
+    }
+    .instagramListContainer {
+        left: 20% !important;
+        top: 30% !important;
+        width: 26% !important;
+    }
+    .sss4 {
+        display: none !important;
+    }
+    .glutensizdonut4 {
+        bottom: 24%;
+        left: 0%;
+        width: 2.9% !important;
+    }
+    .popup {
+        height: 550px !important;
+    }
+}

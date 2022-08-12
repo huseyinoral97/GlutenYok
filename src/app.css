@@ -1,0 +1,185 @@
+.outer-wrapper {
+    width: 100vh !important;
+    height: 100vw !important;
+    transform: rotate(-90deg) translateX(-100vh) !important;
+    transform-origin: top left !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    position: absolute !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+    background-color: #f7a6a8 !important; /* or add it to the track */
+}
+
+/* Add a thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #ebe96a !important;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide5 {
+    width: 50vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 450vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+@media only screen and (max-width: 600px) {
+    .slide5 {
+        width: 200vw;
+        height: 100vh;
+        display: flex;
+        background: none !important;
+    }
+
+    .wrapper {
+        width: 600vw;
+    }
+}
+
+.one {
+    background: url("./images/index-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    background: url("./images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.three {
+    background: url("./images/index3bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.four {
+    background: url("./images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.five {
+    background: url("./images/slide5bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text:hover {
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+}
+
+.header-text:hover div,
+.header-text:hover svg,
+.header-text:hover div span,
+.header-text:hover p {
+    color: white;
+}
+
+@keyframes slide-left {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-300%);
+        transform: translateX(-300%);
+    }
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.outer-wrapper-android {
+    width: auto !important;
+    height: auto !important;
+    transform: rotate(-90deg) translateX(-100vh) !important;
+    transform-origin: top left !important;
+    position: fixed !important;
+    overflow: auto !important;
+}
+
+.wrapper-android {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    width: 700vw;
+}
+
+.zoom {
+    animation: deneme 2s ease 0s 2 normal forwards;
+}
+
+@keyframes deneme {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}

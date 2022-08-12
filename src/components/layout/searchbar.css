@@ -1,0 +1,65 @@
+.container-searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.container-searchbar .searchbox .searchbox__input {
+    display: block;
+    appearance: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+    background-color: white;
+    color: #24233a;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+.container-searchbar .searchbox .searchbox__input::placeholder {
+    color: white;
+}
+.searchbox__input:not(:focus) {
+    color: white !important;
+}
+
+.container-searchbar .searchbox .searchbox__icon {
+    position: absolute;
+    right: calc(53px / 2);
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    right: 50%;
+}
+.container-searchbar .searchbox .searchbox__icon path {
+    fill: #91d9af;
+    transition: 0.4s linear;
+}
+.container-searchbar .searchbox:focus-within {
+    max-width: 300px;
+    border-radius: 15px !important;
+}
+.container-searchbar .searchbox:focus-within .searchbox__input::placeholder {
+    color: black;
+}
+
+.container-searchbar .searchbox:focus-within .searchbox__input {
+    background-color: #fff;
+    padding-right: 50px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.container-searchbar .searchbox:focus-within .searchbox__icon {
+    right: 5%;
+}
+.container-searchbar .searchbox:focus-within .searchbox__icon path {
+    fill: #24233a;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-searchbar .searchbox:focus-within {
+        max-width: 150px;
+    }
+}
